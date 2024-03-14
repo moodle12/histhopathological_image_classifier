@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histopathological Image Classifier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/dropzone.min.css">
+    <link rel="stylesheet" href="./static/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="#">Histopathological Image Classifier</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+        <div class="col card-wrapper" data-player="Adrenal">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_AdrenalGland_01.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Adrenal Gland Mask</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>              
+            <div class="col card-wrapper" data-player="Lymph">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="./static/images/Human_LymphNodes_02.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Lymph Node Mask</h4>
+                            </p>
+                        </div>
+                    </div>
+            </div> 
+            <div class="col card-wrapper" data-player="Pancreas">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_Pancreas_01.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Pancreas Mask</h4>
+                        </p>
+                    </div>
+                </div>
+        </div>            
+            <div class="col card-wrapper" data-player="Thymus">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="./static/images/Human_Thymus_02.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Thymus Mask</h4>
+                            </p>
+                        </div>
+                    </div>
+            </div>          
+
+            <div class="col card-wrapper" data-player="Skin">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_Skin_01.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Skin Mask</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>      
+
+            <div class="col card-wrapper" data-player="Testes">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_Testes_01.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Testes Mask</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                            <h4> Resolution Slider </h4>
+                            <label for="imageSize">Height:</label>
+                            <input type="range" id="imageSize" name="imageSize" min="10" max="1000" value="512">
+                            <span id="imageSizeValue">512px</span>
+                            <br>
+                            <label for="imageSize2">Width:</label>
+                            <input type="range" id="imageSize2" name="imageSize2" min="10" max="1000" value="512">
+                            <span id="imageSizeValue2">512px</span>
+                            <h4> Image Dropbox</h4>
+                            
+                            <form id="uploadForm" class="dropzone" enctype="multipart/form-data">
+                                <div class="dz-message needsclick">
+                                <img src="./static/images/upload.png" width="50vw" height="50vw"><br>
+                                <input type="file" id="imageInput" name="file">
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                                <div class="col-3 mx-auto">
+                                    <button type="submit" class="btn btn-success">Predict</button>
+                                </div>
+                            </div>
+                            </form>
+                        
+                        <!-- <form action="/predict" class="dropzone" id="uploadForm" enctype="multipart/form-data">
+                            <div class="dz-message needsclick">
+                                <img src="./static/images/upload.png" width="50vw" height="50vw"><br>
+                                <input type="file" id="imageInput" name="file">
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form> -->
+                       
+                    </div>
+                    
+                </div>
+                <!-- <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="submit" class="btn btn-success">Classify</button>
+                    </div>
+                </div> -->
+            </div>
+  
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <h5> Original Image </h5>
+            <div id="uploadedResult" class="center mt-5 predicted-mask-container">
+            </div>
+            <h5> Predicted Mask </h5>
+            <div id="predictionResult" class="center predicted-mask-container">
+                <!-- Predicted mask image will be displayed here -->
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+<script>
+    var slider = document.getElementById("imageSize");
+    var output = document.getElementById("imageSizeValue");
+    output.innerHTML = slider.value + "px";
+
+    slider.oninput = function() {
+        output.innerHTML = this.value + "px";
+        // You can perform any actions based on the slider value here
+    }
+    var slider2 = document.getElementById("imageSize2");
+    var output2 = document.getElementById("imageSizeValue2");
+    output2.innerHTML = slider2.value + "px";
+
+    slider2.oninput = function() {
+        output2.innerHTML = this.value + "px";
+        // You can perform any actions based on the slider value here
+    }
+ 
+    function displayPrediction(prediction) {
+        const resultDiv = document.getElementById('predictionResult');
+        resultDiv.innerHTML = `<img src="data:image/png;base64,${prediction}" alt="Predicted Mask">`;
+    }
+    
+    function displayuploaded(uploaded) {
+        const result = document.getElementById('uploadedResult');
+        result.innerHTML = `<img src="data:image/png;base64,${uploaded}" alt="Uploaded Mask">`;
+    }
+    
+    document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        const formData = new FormData();
+        const fileInput = document.getElementById('imageInput');
+        formData.append('file', fileInput.files[0]);
+    
+        try {
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.status}`);
+            }
+    
+            const data = await response.json();
+            displayPrediction(data.prediction);
+            displayuploaded(data.uploaded);
+            console.log(data.uploaded)
+        } catch (error) {
+            console.error('Error:', error.message);
+        }
+    });
+    
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="./static/dropzone.min.js"></script>
+<script src="./static/app.js"></script>
+</html>
