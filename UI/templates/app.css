@@ -38,6 +38,37 @@
 
 }
 
+.label-container {
+  margin-bottom: 20px; /* Add space between the label and the image */
+}
+
+.predicted-mask-container {
+  height: 400px;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  background: white;
+  width: 300px;
+
+}
+.marg{
+  margin-left:30%;
+}
+
+/* Positioning the parent containers side by side */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  position: relative;
+  /* Remove fixed positioning */``
+}
+
+/* Adjust alignment and spacing */
+.predicted-mask-container img {
+  margin-top: 10px; /* Add space between the label and the image */
+}
+
 
 .error {
   font-family: MerriweatherRegular;
