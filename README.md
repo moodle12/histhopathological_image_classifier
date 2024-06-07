@@ -36,33 +36,47 @@ Transfer Learning: Supports transfer learning with pre-trained models to improve
 
 # Technologies Used
  -->Python
+ 
  -->TensorFlow
+ 
  -->Keras
+ 
  -->Fast API
+ 
  -->HTML
+ 
  -->CSS
+ 
  -->JavaScript
+ 
  -->Docker
+ 
  -->OpenCV
  
 # Setup and Installation
 Clone the repository:
+
 git clone https://github.com/moodle12/histopathological_image_classifier.git
+
 cd histopathological_image_classifier
 
 Create and activate a virtual environment:
 
 python -m venv venv
+
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 Install the dependencies:
+
 pip install -r requirements.txt
 
 # Usage
 Run the application:
+
 uvicorn main:app --reload
 
 Access the application:
+
 Open your browser and navigate to http://127.0.0.1:8000
 
 # Docker Instructions
@@ -75,39 +89,68 @@ Run the Docker container:
 docker run -d -p 8000:8000 image_name
 
 Access the application:
+
 Open your browser and navigate to http://127.0.0.1:8000
 
 # File Structure
 mini_project/
+
 │
+
 ├── UI/
+
 │   ├── index.html
+
 │   ├── main.py
+
 │   ├── model4.h5
+
 │   ├── pruned_model.h5
+
 │   ├── quant_model.tflite
+
 │   └── static/
+
 │       └── app.css
+
 │       ├── app.js
+
 │       ├── dropzone.min.js
+
 |       ├── dropzone.min.css
+
 ├── py/
+
 │   ├── stain_utils.py
+
 │   ├── stainNorm_Macenko.py
+
 │   ├── stainNorm_Reinhard.py
+
 │   ├── stainNorm_Vahadane.py
+
 |
+
 ├── Annotator1/(complete data)
+
 |
+
 ├── Dockerfile
+
 ├── requirements.txt
+
 ├── mini_project.ipynb
+
 └── README.md
 
 # Contributing
 
 Fork the repository.
+
 Create a new branch (git checkout -b feature/YourFeature).
+
 Commit your changes (git commit -am 'Add some feature').
+
 Push to the branch (git push origin feature/YourFeature).
+
 Create a new Pull Request.
