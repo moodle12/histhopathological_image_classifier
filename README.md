@@ -56,9 +56,9 @@ Transfer Learning: Supports transfer learning with pre-trained models to improve
 # Setup and Installation
 Clone the repository:
 
-git clone https://github.com/moodle12/histopathological_image_classifier.git
+git clone https://github.com/moodle12/histopathological_image_segmentation.git
 
-cd histopathological_image_classifier
+cd histopathological_image_segmentation
 
 Create and activate a virtual environment:
 
