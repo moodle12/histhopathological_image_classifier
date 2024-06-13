@@ -1,4 +1,4 @@
-![Screenshot (869)](https://github.com/moodle12/histopathological_image_segmentation/assets/103280407/42fe7415-f64c-4b77-a02a-02ef49ab7bd2)
+![new_ss](https://github.com/moodle12/histopathological_image_segmentation/assets/103280407/ce327177-ccb8-43a3-abfd-79ec40bf74ba)
 
 # Interactive Histopathological Image Segmentation
 # Table of Contents
