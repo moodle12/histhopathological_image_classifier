@@ -92,56 +92,6 @@ Access the application:
 
 Open your browser and navigate to http://127.0.0.1:8000
 
-# File Structure
-mini_project/
-
-│
-
-├── UI/
-
-│   ├── index.html
-
-│   ├── main.py
-
-│   ├── model4.h5
-
-│   ├── pruned_model.h5
-
-│   ├── quant_model.tflite
-
-│   └── static/
-
-│       └── app.css
-
-│       ├── app.js
-
-│       ├── dropzone.min.js
-
-|       ├── dropzone.min.css
-
-├── py/
-
-│   ├── stain_utils.py
-
-│   ├── stainNorm_Macenko.py
-
-│   ├── stainNorm_Reinhard.py
-
-│   ├── stainNorm_Vahadane.py
-
-|
-
-├── Annotator1/(complete data)
-
-|
-
-├── Dockerfile
-
-├── requirements.txt
-
-├── mini_project.ipynb
-
-└── README.md
 
 # Contributing
 
