@@ -1,6 +1,8 @@
+![Screenshot (867)](https://github.com/moodle12/histopathological_image_segmentation/assets/103280407/f5b555c9-cd74-48d3-bfd7-78d5dcf6058f)
 # Interactive Histopathological Image Segmentation
 # Table of Contents
 # Introduction
+
 Digital pathology enables the acquisition, management and sharing of information retrieved from stained digitised tissue sections from patient-derived biopsies in a digital environment. This offers many benefits including image interpretation by remotely located specialists or further use of the samples for scientific purposes.
 Histopathological image classification plays a vital role in the field of medicine and biomedical research, offering invaluable insights into various diseases and conditions. Some key points highlighting its significance include:
 
