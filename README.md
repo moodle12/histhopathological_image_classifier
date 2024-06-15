@@ -21,11 +21,13 @@ Accurate Segmentation: Implements state-of-the-art algorithms to accurately segm
 Preprocessing and Augmentation
 
 Image Preprocessing: Includes steps such as normalization, noise reduction, and stain normalization to prepare images for segmentation.
+
 Customizable Training Pipeline: Flexible training pipeline allowing customization of parameters such as learning rate, batch size, and number of epochs.
 
 Visualization
 
 Overlay Visualization: Visualize segmentation results overlaid on original images for easy comparison.
+
 Interactive Visualization: Interactive tools to visualize and inspect segmented regions, allowing for zooming, panning, and adjusting transparency.
 
 User Interface
@@ -35,12 +37,15 @@ User-Friendly Interface: Intuitive user interface for uploading images, running 
 Integration and Deployment
 
 API Integration: Provides an API for easy integration with other software or workflows.
+
 Docker Support: Fully containerized using Docker, allowing for easy deployment and scalability.
+
 Cloud Deployment: Ready for deployment on cloud platforms for scalable processing of large datasets.
 
 Advanced Features
 
 Deep Learning Models: Utilizes advanced deep learning models such as U-Net, Squeeze U-Net, or custom architectures tailored for histopathological images.
+
 Transfer Learning: Supports transfer learning with pre-trained models to improve performance and reduce training time.
 
 # Technologies Used
