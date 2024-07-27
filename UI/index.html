@@ -17,27 +17,25 @@
 
     <div class="container">
         <div class="row">
-        <div class="col card-wrapper" data-player="Adrenal">
+            <div class="col card-wrapper" data-player="Adrenal">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
                         <img class="w-100 h-100" src="./static/images/Human_AdrenalGland_01.png" alt="Card image cap">
                     </div>
                     <div class="card-body text-center mt-4">
                         <h4 class="text-uppercase card-title">Adrenal Gland Mask</h4>
-                        </p>
                     </div>
                 </div>
             </div>              
             <div class="col card-wrapper" data-player="Lymph">
-                    <div class="card border-0">
-                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                            <img class="w-100 h-100" src="./static/images/Human_LymphNodes_02.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body text-center mt-4">
-                            <h4 class="text-uppercase card-title">Lymph Node Mask</h4>
-                            </p>
-                        </div>
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_LymphNodes_02.png" alt="Card image cap">
                     </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Lymph Node Mask</h4>
+                    </div>
+                </div>
             </div> 
             <div class="col card-wrapper" data-player="Pancreas">
                 <div class="card border-0">
@@ -46,22 +44,19 @@
                     </div>
                     <div class="card-body text-center mt-4">
                         <h4 class="text-uppercase card-title">Pancreas Mask</h4>
-                        </p>
                     </div>
                 </div>
-        </div>            
+            </div>            
             <div class="col card-wrapper" data-player="Thymus">
-                    <div class="card border-0">
-                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
-                            <img class="w-100 h-100" src="./static/images/Human_Thymus_02.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body text-center mt-4">
-                            <h4 class="text-uppercase card-title">Thymus Mask</h4>
-                            </p>
-                        </div>
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./static/images/Human_Thymus_02.png" alt="Card image cap">
                     </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Thymus Mask</h4>
+                    </div>
+                </div>
             </div>          
-
             <div class="col card-wrapper" data-player="Skin">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
@@ -69,11 +64,9 @@
                     </div>
                     <div class="card-body text-center mt-4">
                         <h4 class="text-uppercase card-title">Skin Mask</h4>
-                        </p>
                     </div>
                 </div>
             </div>      
-
             <div class="col card-wrapper" data-player="Testes">
                 <div class="card border-0">
                     <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
@@ -81,29 +74,26 @@
                     </div>
                     <div class="card-body text-center mt-4">
                         <h4 class="text-uppercase card-title">Testes Mask</h4>
-                        </p>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="row">
             <div class="col-sm-4">
                 <div class="row">
                     <div class="col-12 mx-auto">
-                            <h4> Resolution Slider </h4>
-                            <label for="imageSize">Height:</label>
-                            <input type="range" id="imageSize" name="imageSize" min="10" max="1000" value="512">
-                            <span id="imageSizeValue">512px</span>
-                            <br>
-                            <label for="imageSize2">Width:</label>
-                            <input type="range" id="imageSize2" name="imageSize2" min="10" max="1000" value="512">
-                            <span id="imageSizeValue2">512px</span>
-                            <h4> Image Dropbox</h4>
-                            
-                            <form id="uploadForm" class="dropzone" enctype="multipart/form-data">
-                                <div class="dz-message needsclick">
+                        <h4>Resolution Slider</h4>
+                        <label for="imageSize">Height:</label>
+                        <input type="range" id="imageSize" name="imageSize" min="10" max="1000" value="512">
+                        <span id="imageSizeValue">512px</span>
+                        <br>
+                        <label for="imageSize2">Width:</label>
+                        <input type="range" id="imageSize2" name="imageSize2" min="10" max="1000" value="512">
+                        <span id="imageSizeValue2">512px</span>
+                        <h4>Image Dropbox</h4>
+                        <form id="uploadForm" class="dropzone" enctype="multipart/form-data">
+                            <div class="dz-message needsclick">
                                 <img src="./static/images/upload.png" width="50vw" height="50vw"><br>
                                 <input type="file" id="imageInput" name="file">
                                 <span class="note needsclick">Drop files here or click to upload</span>
@@ -111,29 +101,22 @@
                                     <button type="submit" class="btn btn-success">Predict</button>
                                 </div>
                             </div>
-                            </form>
-                        
-                        <!-- <form action="/predict" class="dropzone" id="uploadForm" enctype="multipart/form-data">
-                            <div class="dz-message needsclick">
-                                <img src="./static/images/upload.png" width="50vw" height="50vw"><br>
-                                <input type="file" id="imageInput" name="file">
-                                <span class="note needsclick">Drop files here or click to upload</span>
+                            <div class="form-group mt-3">
+                                <label for="modelSelect">Select Model:</label>
+                                <select id="modelSelect" name="modelSelect" class="form-control">
+                                    <option value="Reinhard">Reinhard</option>
+                                    <option value="UNET">UNET</option>
+                                    <option value="Macenko">Macenko</option>
+                                    <option value="Vahadane">Vahadane</option>                                    
+                                </select>
                             </div>
-                        </form> -->
-                       
+                        </form>
                     </div>
-                    
                 </div>
-                <!-- <div class="row mt-3">
-                    <div class="col-3 mx-auto">
-                        <button id="submitBtn" type="submit" class="btn btn-success">Classify</button>
-                    </div>
-                </div> -->
             </div>
-  
+
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- Original Image Label and Container -->
                     <div class="label-container text-center">
                         <h5>Original Image</h5>
                         <div id="uploadedResult" class="mt-3 predicted-mask-container">
@@ -142,7 +125,6 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <!-- Predicted Image Label and Container -->
                     <div class="label-container text-center" id="mas">
                         <h5>Predicted Mask</h5>
                         <div id="predictionResult" class="predicted-mask-container">
@@ -151,18 +133,7 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- <div class="col-sm-4" id="resultHolder">
-            </div>
-            <h5> Original Image </h5>
-            <div id="uploadedResult" class="center mt-5 predicted-mask-container">
-            </div>
-            <h5> Predicted Mask </h5>
-            <div id="predictionResult" class="center predicted-mask-container">
-            </div>
-             -->
         </div>
-
     </div>
 
 </body>
@@ -173,7 +144,6 @@
 
     slider.oninput = function() {
         output.innerHTML = this.value + "px";
-        // You can perform any actions based on the slider value here
     }
     var slider2 = document.getElementById("imageSize2");
     var output2 = document.getElementById("imageSizeValue2");
@@ -181,7 +151,6 @@
 
     slider2.oninput = function() {
         output2.innerHTML = this.value + "px";
-        // You can perform any actions based on the slider value here
     }
  
     function displayPrediction(prediction) {
@@ -203,6 +172,8 @@
         const formData = new FormData();
         const fileInput = document.getElementById('imageInput');
         formData.append('file', fileInput.files[0]);
+        formData.append('model_name', document.getElementById('modelSelect').value);
+        formData.append('image_size', document.getElementById('imageSize').value);
     
         try {
             const response = await fetch('/predict', {
@@ -222,9 +193,7 @@
             console.error('Error:', error.message);
         }
     });
-    
 </script>
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="./static/dropzone.min.js"></script>

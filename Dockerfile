@@ -21,6 +21,11 @@
 
 FROM python:3.11
 
+RUN apt-get update && apt-get install -y \
+    libgl1 \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /code
 
 COPY ./requirements.txt /code/requirements.txt
