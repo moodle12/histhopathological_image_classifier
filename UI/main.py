@@ -15,6 +15,7 @@ MODELS = {
     'UNET': tf.keras.models.load_model('model4.h5'),
     'Vahadane': tf.keras.models.load_model('Vahadane.h5'),
     'Macenko': tf.keras.models.load_model('Macenko.h5'),
+    
 }
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
